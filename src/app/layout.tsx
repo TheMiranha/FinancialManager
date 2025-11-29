@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { GeistSans } from "geist/font/sans"; // import font
 import "./globals.css";
+import {NextIntlClientProvider} from 'next-intl';
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,7 +16,13 @@ export default function RootLayout({
   return (
     // add font to className, also add antialiased and dark mode
     <html lang="en" className={`${GeistSans.className} antialiased dark:bg-gray-950`}>
-      <body>{children}</body>
+      <body>
+        <NextIntlClientProvider>
+          {
+            children
+          }
+        </NextIntlClientProvider>
+      </body>
     </html>
   );
 }
