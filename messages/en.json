@@ -1,5 +1,36 @@
 {
     "Home": {
         "Text1": "Hello World!"
+    },
+    "Auth-SignIn": {
+        "Title": "Sign in to your account",
+        "Alternative": "Don't have an account?",
+        "CreateAccount": "Create one",
+        "GithubButton": "Sign in with Github",
+        "GoogleButton": "Sign in with Google",
+        "Or": "or",
+        "Email": "Email",
+        "Password": "Password",
+        "SignInButton": "Sign in",
+        "PasswordResetText": "Forgot your password?",
+        "PasswordResetLink": "Reset password",
+        "InvalidEmail": "Invalid email",
+        "InvalidCredentials": "Invalid credentials",
+        "Error": "Ops..."
+    },
+    "Auth-SignUp": {
+        "Title": "Create a new account to access FinancialManager",
+        "Name": "Name",
+        "Email": "Email",
+        "Password": "Password",
+        "ConfirmPassword": "Confirm password",
+        "SignUpButton": "Create account",
+        "Alternative": "Already have an account?",
+        "SignIn": "Sign in",
+        "InvalidEmail": "Invalid email",
+        "PasswordMismatch": "Passwords do not match"
+    },
+    "Utils": {
+        "Close": "Close"
     }
 }

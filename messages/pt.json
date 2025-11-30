@@ -1,5 +1,36 @@
 {
     "Home": {
         "Text1": "Testando"
+    },
+    "Auth-SignIn": {
+        "Title": "Acesse sua conta",
+        "Alternative": "Não tem uma conta?",
+        "CreateAccount": "Crie uma",
+        "GithubButton": "Entrar com Github",
+        "GoogleButton": "Entrar com Google",
+        "Or": "ou",
+        "Email": "Email",
+        "Password": "Senha",
+        "SignInButton": "Entrar",
+        "PasswordResetText": "Esqueceu sua senha?",
+        "PasswordResetLink": "Resetar senha",
+        "InvalidEmail": "Email inválido",
+        "InvalidCredentials": "Credenciais inválidas",
+        "Error": "Ops..."
+    },
+    "Auth-SignUp": {
+        "Title": "Crie uma nova conta para acessar FinancialManager",
+        "Name": "Nome",
+        "Email": "Email",
+        "Password": "Senha",
+        "ConfirmPassword": "Confirme sua senha",
+        "SignUpButton": "Criar conta",
+        "Alternative": "Já tem uma conta?",
+        "SignIn": "Acessar",
+        "InvalidEmail": "Email inválido",
+        "PasswordMismatch": "Senhas não coincidem"
+    },
+     "Utils": {
+        "Close": "Fechar"
     }
 }
