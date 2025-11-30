@@ -1,16 +1,11 @@
-'use client';
+import { RiDonutChartFill } from '@remixicon/react';
 
-import { RiDonutChartFill, RiGithubFill, RiGoogleFill } from '@remixicon/react';
+import { SignInForm } from '@/components/screens/auth/sign-in-form';
+import { getTranslations } from 'next-intl/server';
 
-import { Button } from '@/components/Button';
-import { Divider } from '@/components/Divider';
-import { Input } from '@/components/Input';
-import { Label } from '@/components/Label';
-import { useTranslations } from 'next-intl';
+export default async function Page() {
 
-export default function Example() {
-
-    const t = useTranslations('Auth-SignIn');
+  const t = await getTranslations('Auth-SignIn')
 
   return (
     <>
@@ -37,58 +32,7 @@ export default function Example() {
               {t('CreateAccount')}
             </a>
           </p>
-          <div className="mt-8 sm:flex sm:items-center sm:space-x-2">
-            <Button asChild variant="secondary" className="w-full">
-              <a href="#" className="inline-flex items-center gap-2">
-                <RiGithubFill className="size-5 shrink-0" aria-hidden={true} />
-                {t('GithubButton')}
-              </a>
-            </Button>
-            <Button asChild variant="secondary" className="mt-2 w-full sm:mt-0">
-              <a href="#" className="inline-flex items-center gap-2">
-                <RiGoogleFill className="size-4" aria-hidden={true} />
-                {t('GoogleButton')}
-              </a>
-            </Button>
-          </div>
-          <Divider>{t('Or')}</Divider>
-          <form action="#" method="post" className="mt-6 space-y-4">
-            <div>
-              <Label
-                htmlFor="email"
-                className="text-sm font-medium text-gray-900 dark:text-gray-50"
-              >
-                {t('Email')}
-              </Label>
-              <Input
-                type="email"
-                id="email"
-                name="email"
-                autoComplete="email"
-                placeholder="john@company.com"
-                className="mt-2"
-              />
-            </div>
-            <div>
-              <Label
-                htmlFor="password"
-                className="text-sm font-medium text-gray-900 dark:text-gray-50"
-              >
-                {t('Password')}
-              </Label>
-              <Input
-                type="password"
-                id="password"
-                name="password"
-                autoComplete="password"
-                placeholder="Password"
-                className="mt-2"
-              />
-            </div>
-            <Button type="submit" className="mt-4 w-full">
-              {t('SignInButton')}
-            </Button>
-          </form>
+          <SignInForm/>
           <p className="mt-6 text-sm text-gray-500 dark:text-gray-500">
             {t('PasswordResetText')}{' '}
             <a
